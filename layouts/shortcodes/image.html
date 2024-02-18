@@ -1,0 +1,9 @@
+{{ $src := .Get "src" }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+{{ $float := .Get "float" | default "left" }}
+{{ $marginRight := .Get "marginRight" | default "10px" }}
+
+<div style="float: {{ $float }}; margin-right: {{ $marginRight }};">
+    <img src="{{ $src }}" alt="{{ .Get "alt" }}" width="{{ $width }}" height="{{ $height }}">
+</div>

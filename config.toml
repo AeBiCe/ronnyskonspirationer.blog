@@ -1,0 +1,47 @@
+baseurl = "/"
+title = "Ronnys konspirationer"
+defaultContentLanguage = "sv"
+defaultContentLanguageInSubdir = true
+paginate = "7" # Number of posts per page
+theme = "mainroad"
+
+[Author] # Used in authorbox
+  name = "Ronny"
+  bio = "Mitt namn är Ronny, att ens antyda frågan om mitt efternamn eller ålder är som att dansa på randen av avgrunden, en risk jag inte kan ta i denna stridsfält av skuggor och bedrägeri. Varje ljud av ett namnflämt kan vara en kniv i min rygg, en signal till de mörka krafterna som övervakar mina steg"
+  avatar = "https://i.ibb.co/Dp19XJj/ronny.jpg"
+
+[[menu.main]]
+  identifier = "nyheter"
+  name = "nyheter"
+  url = "/nyheter/"
+
+
+[Params]
+  subtitle = "välkommen till en ny verklighet"
+  description = "John Doe's Personal blog about everything" # Site description. Used in meta description
+  copyright = "Ronny" # Footer copyright holder, otherwise will use site title
+  # opengraph = true # Enable OpenGraph if true
+  # schema = true # Enable Schema
+  # twitter_cards = true # Enable Twitter Cards if true
+  # readmore = false # Show "Read more" button in list if true
+  authorbox = true # Show authorbox at bottom of pages if true
+  # toc = true # Enable Table of Contents
+  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+  mainSections = ["nyheter"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "2006-01-02" # Change the format of dates
+  # mathjax = true # Enable MathJax
+  # mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  # mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  # googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+  # customCSS = ["css/custom.css"] # Include custom CSS files
+  # customJS = ["js/custom.js"] # Include custom JS files
+
+  [Params.style.vars]
+  highlightColor = "#e22d30" # Override highlight color
+
+  # Override font-family sets
+  # Take care of different quotes OR escaping symbols in these params if necessary
+  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
+  # Secondary font-family set responsible for pre, code, kbd, and samp tags font
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
